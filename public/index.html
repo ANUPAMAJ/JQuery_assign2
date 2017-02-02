@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MovieSearcher.com</title>
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+	<!--Including bootstrap css-->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+	<!--Including external css stylesheet-->
+	<link rel="stylesheet" type="text/css" href="myStylesheet.css">
+</head>
+<body>
+	<!--Main container-->
+	<div class="container">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<!--nav container-->
+			<div class="container">
+			<!--btn-navbar is used as the toggle for collapsed navbar content -->
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		 				<span class="icon-bar"></span>
+		       			<span class="icon-bar"></span>
+		       			<span class="icon-bar"></span>
+		    		</button>
+					<a class="navbar-brand" href="/">MovieWorld</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	   				<ul class="nav navbar-nav">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+					</ul>				
+				</div>
+			</div><!--End nav bar container-->
+		</div><!--End nav bar-->
+
+	<!--My Carousel begin-->
+		<div class="carousel slide" id="MyCarousel" data-ride="carousel">
+		
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#MyCarousel"></li>
+				<li data-slide-to="1" data-target="#MyCarousel"></li>
+				<li data-slide-to="2" data-target="#MyCarousel"></li>
+				<li data-slide-to="3" data-target="#MyCarousel"></li>
+			</ol>
+
+			<!--wrapper for slides-->
+			<div class="carousel-inner">
+
+				<div class="item active">
+					<img class="img-responsive" src="img/m1.jpg">
+				</div><!-- end item -->
+
+				<div class="item">
+					<img class="img-responsive" src="img/m2.jpg">
+				</div><!-- end item -->
+
+				<div class="item">
+					<img class="img-responsive" src="img/m3.jpg">
+				</div><!-- end item -->
+
+				<div class="item">
+					<img class="img-responsive" src="img/m4.jpg">
+				</div><!-- end item -->
+			</div><!--End carousel inner-->
+
+			<!-- Controls -->
+			<a class="left carousel-control" data-slide="prev" href="#MyCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#MyCarousel"><span class="icon-next"></span></a>
+
+		</div><!--End of carousel end-->
+
+		<!--Two column section-->
+		<div class="row sec">
+				
+			<div class="col-sm-4">
+				<form id="add_Mv_details">
+				  <div>
+					<h2>Add a new movie</h2>	
+				  </div>
+				  <div class="form-group">
+				    <label>Title</label>
+				    <input type="text" class="form-control" id="Title">
+				  </div>
+				  <div class="form-group">
+				    <label>Year</label>
+				    <input type="text" class="form-control" id="Year">
+				  </div>
+				  <div class="form-group">
+				    <label>Type</label>
+				    <input type="text" class="form-control" id="Type">
+				  </div>
+				  <div class="form-group">
+				    <label>Poster</label>
+				    <input type="text" class="form-control" id="Poster">
+				  </div>
+				  <div>
+				  	<button class='btn btn-primary' id="btn_Add">Add</button>
+				  </div>
+				</form>
+				<form id="upd_Mv_details">
+				  <div>
+					<h2>Update a new movie</h2>	
+				  </div>
+				  <div class="form-group">
+				    <label>Title</label>
+				    <input type="text" class="form-control" id="up_Title">
+				  </div>
+				  <div class="form-group">
+				    <label>Year</label>
+				    <input type="text" class="form-control" id="up_Year">
+				  </div>
+				  <div class="form-group">
+				    <label>IMBD_ID</label>
+				    <input type="text" class="form-control" id="up_id">
+				  </div>
+				  <div class="form-group">
+				    <label>Type</label>
+				    <input type="text" class="form-control" id="up_Type">
+				  </div>
+				  <div class="form-group">
+				    <label>Poster</label>
+				    <input type="text" class="form-control" id="up_Poster">
+				  </div>
+				  <div>
+				  	<button class='btn btn-primary' id="btn_Update">Update</button>
+				  </div>
+				</form>
+			</div><!--End of col_4-->
+			<div class="col-sm-8">
+				<table class="table table-responsive table-striped" id="mv_lists">
+					<tr>
+						<th>Title</th>
+						<th>Year</th>
+						<th>imbd_ID</th>
+						<th>Type</th>
+						<th>Poster</th>
+						<th>Edit</th>
+						<th>Delete</th>
+					</tr>						
+				</table>
+			</div><!--End of col_8-->
+
+		</div><!--End of two column section-->
+	</div><!--End main container-->
+
+	<!--JS Files goes here-->
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="jquery.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

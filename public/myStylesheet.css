@@ -1,0 +1,17 @@
+.row{
+    margin-top: 10px;
+}
+#MyCarousel .item{
+    height: 100%;
+}
+.carousel-inner{
+    margin-top: 62px;
+}
+button{
+    margin: auto;
+}
+#top_head{
+ background-color: black;
+ color: white;
+ height: 40px;   
+}
